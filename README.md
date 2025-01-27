@@ -35,6 +35,14 @@ Before running the app, make sure you have the following installed:
 
    ```bash
    git clone https://github.com/yourusername/todo-app.git
+   
 2. **Navigate to the project directory:**
 ```bash
    cd todo-app
+
+3. **Clone the repository**:
+
+   ```bash
+   npm install
+  # or if you prefer yarn
+  yarn install
