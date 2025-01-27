@@ -1,55 +1,36 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-# Todo App
+## Getting Started
 
-A simple Todo App built with **Next.js**, **Redux Toolkit**, **TypeScript**, and **Tailwind CSS**. The app allows you to manage tasks with features to add, delete, mark as complete, and filter tasks into three categories: All Tasks, Active Tasks, and Completed Tasks.
+First, run the development server:
 
-## Features
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-- Add a new task
-- Delete a task
-- Mark a task as complete
-- Display tasks in three different categories:
-  - **All Tasks**
-  - **Active Tasks**
-  - **Completed Tasks**
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Tech Stack
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- **Next.js** - A React framework for building web applications with server-side rendering, routing, and more. ([Next.js Documentation](https://nextjs.org/docs))
-- **TypeScript** - Adds static typing to JavaScript to make the app more reliable and maintainable.
-- **Tailwind CSS** - A utility-first CSS framework for designing modern web interfaces. ([Tailwind CSS Documentation](https://tailwindcss.com/docs/installation))
-- **Redux Toolkit** - A library for efficient Redux development, simplifying state management. ([Redux Toolkit Documentation](https://redux-toolkit.js.org/))
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Installation
+## Learn More
 
-### Prerequisites
+To learn more about Next.js, take a look at the following resources:
 
-Before running the app, make sure you have the following installed:
-- **Node.js** (version 14.x or later)
-- **npm** (version 6.x or later) or **yarn**
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-### Steps
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-1. **Clone the repository**:
+## Deploy on Vercel
 
-   ```bash
-   git clone https://github.com/yourusername/todo-app.git
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-2. **Navigate to the project directory**:
-    ```bash
-    cd todo-app
-
-3. **Install dependencies:**:
-    ```bash
-    npm install
-    # or if you prefer yarn
-    yarn install
-
-4. **Run the development server:**:
-    ```bash
-    npm run dev
-    # or if you prefer yarn
-    yarn dev
-
-This will start the app on http://localhost:3000.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
