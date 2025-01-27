@@ -58,6 +58,7 @@ Before running the app, make sure you have the following installed:
 This will start the app on [http://localhost:3000](http://localhost:3000).
 
 ### Folder Structure
+
     ```bash
     /app                 # Next.js App Directory
         /components        # React components
@@ -65,10 +66,3 @@ This will start the app on [http://localhost:3000](http://localhost:3000).
         /store             # Redux Toolkit slices and store configuration
         /styles            # Tailwind CSS styles
     /public              # Public assets like images
-
-###How to Use
-
-1. Add Task: Click on the "Add Task" button to add a new task to your list.
-2. Delete Task: Click on the trash icon next to a task to delete it.
-3. Mark as Complete: Click on the checkbox next to a task to mark it as complete.
-4. Tabs: Switch between "All Tasks", "Active Tasks", and "Completed Tasks" to filter tasks accordingly.
