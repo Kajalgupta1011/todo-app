@@ -10,6 +10,15 @@ interface TodoState {
     todos: Todo[];
 }
 
+interface editTofoState{
+    id: string,
+    text: string
+}
+
+// interface toggleTodo{
+//     id: string,
+//     completed: boolean
+// }
 
 const initialState: TodoState = {
     todos: [{ id: '1', text: 'sleeping', completed: false }]
@@ -28,10 +37,22 @@ export const todoSlice = createSlice({
         deleteTodo: (state, action: PayloadAction<string>) =>{
             // state.todos.filter((todo)=>(todo.id != action.payload));
             state.todos = state.todos.filter((todo) => todo.id !== action.payload);
+        },
+        editTodo: (state, action: PayloadAction<editTofoState>) =>{
+            const findedTodo = state.todos.find((todo)=> todo.id === action.payload.id);
+            if(findedTodo){
+                findedTodo.text = action.payload.text
+            }
+        },
+        toggleTodo: (state, action: PayloadAction<string> ) =>{
+            const findtoggled = state.todos.find((todo)=> todo.id === action.payload);
+            if(findtoggled){
+                findtoggled.completed = !findtoggled.completed
+            }
         }
     }
 
 })
 
-export const {addTodo, deleteTodo} = todoSlice.actions;
+export const {addTodo, deleteTodo, editTodo, toggleTodo} = todoSlice.actions;
 export default todoSlice.reducer;
