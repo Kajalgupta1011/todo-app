@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteTodo, editTodo, toggleTodo } from '@/Stores/todos/todosSlice'
+import { Check, Pencil, Trash2, X } from 'lucide-react'
 interface todoProps {
   todo: {
     id: string,
@@ -39,13 +40,13 @@ function ListItem({todo}: todoProps) {
           onClick={handleEditing}
           className="p-1 text-green-600 hover:text-green-700"
         >
-          ✔
+          <Check className="h-4 w-4" />
         </button>
         <button 
           onClick={editCancel}
           className="p-1 text-red-600 hover:text-red-700"
         >
-          ❌
+          <X className="h-4 w-4" />
         </button>
       </li>
     );
@@ -66,13 +67,13 @@ function ListItem({todo}: todoProps) {
         onClick={() => setIsEdit(true)}
         className="px-2 py-1 text-sm text-slate-600 hover:text-slate-800"
       >
-        Edit
+        <Pencil className="h-4 w-4" />
       </button>
       <button 
         onClick={() => dispatch(deleteTodo(todo.id))}
         className="px-2 py-1 text-sm text-red-600 hover:text-red-700"
       >
-        Delete
+        <Trash2 className="h-4 w-4" />
       </button>
     </li>
   )
