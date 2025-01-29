@@ -15,13 +15,9 @@ interface editTofoState{
     text: string
 }
 
-// interface toggleTodo{
-//     id: string,
-//     completed: boolean
-// }
 
 const initialState: TodoState = {
-    todos: [{ id: '1', text: 'sleeping', completed: false }]
+    todos: [{ id: nanoid(), text: 'sleeping', completed: false }]
 }
 export const todoSlice = createSlice({
     name: 'todos',
