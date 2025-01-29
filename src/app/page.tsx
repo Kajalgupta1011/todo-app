@@ -1,6 +1,5 @@
 
 import AddTodo from './Components/AddTodo'
-import TabList from './Components/TabList';
 import { TodoList } from './Components/TodoList';
 export default function Home() {
   return (
@@ -9,7 +8,6 @@ export default function Home() {
         ToDo App
       </h1>
       <AddTodo />
-      {/* <TabList/> */}
       <TodoList />
     </main>
   );
