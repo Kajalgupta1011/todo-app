@@ -20,8 +20,8 @@ export function TodoList() {
 
 
     return (
-        <div className='grid grid-cols-[240px,1fr] mt-8 min-h-[400px] border-x rounded-lg border-y border-slate-300'>
-            <div className='flex flex-col gap-2 h-full bg-slate-200 justify-start space-y-1 bg-muted p-4 rounded-l-lg'>
+        <div className='grid md:grid-cols-[240px,1fr] mt-8 min-h-[400px] border-x rounded-lg border-y border-slate-300'>
+            <div className='flex md:flex-col gap-2 h-full bg-slate-200 justify-start space-y-1 bg-muted p-4 rounded-l-lg'>
                 {
                     tabs.map((tab, idx) => {
                         return (
@@ -29,17 +29,17 @@ export function TodoList() {
                                 {tab === 'all' ? (
                                     <div className={`${activeTab === tab ? "flex items-center px-2 py-1 shadow-sm gap-2 bg-white rounded-md border-blue-500 font-bold" : "flex items-center px-2 py-1 gap-3 text-gray-500"}`} key={tab+idx}>
                                         <ListTodo className="h-4 w-4 mr-2" />
-                                        <button className='' onClick={() => setActiveTab(tab)}>{tab} Tasks</button>
+                                        <button className='' onClick={() => setActiveTab(tab)}> All Tasks</button>
                                     </div>
                                 ) : (tab === 'active' ? (
                                     <div className={`${activeTab === tab ? "flex items-center px-2 py-1 shadow-sm gap-2 bg-white rounded-md border-blue-500 font-bold" : "flex items-center px-2 py-1 gap-3 text-gray-500"}`} key={tab+idx}>
                                         <Circle className="h-4 w-4 mr-2" /> 
-                                        <button className='' onClick={() => setActiveTab(tab)}>{tab} Tasks</button>
+                                        <button className='' onClick={() => setActiveTab(tab)}>Active Tasks</button>
                                     </div>
                                 ) : (
                                     <div className={`${activeTab === tab ? "flex items-center px-2 py-1 shadow-sm gap-2 bg-white rounded-md border-blue-500 font-bold" : "flex items-center px-2 py-1 gap-3 text-gray-500"}`} key={tab+idx}>
                                         <CheckCircle2 className="h-4 w-4 mr-2" /> 
-                                        <button className='' onClick={() => setActiveTab(tab)}>{tab} Tasks</button>
+                                        <button className='' onClick={() => setActiveTab(tab)}>Completed Tasks</button>
                                     </div>
                                 )
 
