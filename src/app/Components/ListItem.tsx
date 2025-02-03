@@ -29,7 +29,7 @@ function ListItem({ todo }: todoProps) {
 
   if (isEdit) {
     return (
-      <li className='flex sm:flex-col md:items-center gap-2 p-4 bg-white rounded-lg shadow-sm'>
+      <li className='flex md:items-center gap-2 p-4 bg-white rounded-lg shadow-sm'>
         <input
           type="text"
           value={editText}
