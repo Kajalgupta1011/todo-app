@@ -18,7 +18,7 @@ interface editTofoState{
 
 const initialState: TodoState = {
     todos: [{ id: nanoid(), text: 'Reading', completed: false },
-        { id: nanoid(), text: 'Walking', completed: false }
+        { id: nanoid(), text: 'Sleeping', completed: false }
     ]
 }
 export const todoSlice = createSlice({
@@ -33,7 +33,6 @@ export const todoSlice = createSlice({
            });
         },
         deleteTodo: (state, action: PayloadAction<string>) =>{
-            // state.todos.filter((todo)=>(todo.id != action.payload));
             state.todos = state.todos.filter((todo) => todo.id !== action.payload);
         },
         editTodo: (state, action: PayloadAction<editTofoState>) =>{

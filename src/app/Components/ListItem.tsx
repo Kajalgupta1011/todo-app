@@ -69,15 +69,6 @@ function ListItem({ todo }: todoProps) {
         </span>
         <span className={`flex-1 text-[18px] ml-3 ${todo.completed ? 'line-through text-slate-400' : 'text-slate-700'}`}>{todo.text}</span>
       </label>
-      {/* <input
-        type="checkbox"
-        checked={todo.completed}
-        onChange={() => dispatch(toggleTodo(todo.id))}
-        className="w-4 h-4 accent-[#5A5A5A50]"
-      />
-      <span className={`flex-1 ${todo.completed ? 'line-through text-slate-400' : 'text-slate-700'}`}>
-        {todo.text}
-      </span> */}
       <div className='flex-1 justify-end flex gap-2'>
         <button
           onClick={() => setIsEdit(true)}
