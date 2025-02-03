@@ -1,6 +1,4 @@
 
-import { CheckSquare } from 'lucide-react';
-// import AddTodo from './Components/AddTodo'
 import { TodoList } from './Components/TodoList';
 export default function Home() {
   return (

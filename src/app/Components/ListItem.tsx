@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { deleteTodo, editTodo, toggleTodo } from '@/Stores/todos/todosSlice'
-import { Check, CheckCheck, CheckIcon, Pencil, Trash2, X } from 'lucide-react'
+import { Check, Pencil, Trash2, X } from 'lucide-react'
 interface todoProps {
   todo: {
     id: string,

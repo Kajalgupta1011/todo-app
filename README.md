@@ -61,6 +61,9 @@ This will start the app on [http://localhost:3000](http://localhost:3000).
 ### All Tab
 ![alt text](image-2.png)
 
+### Editing the Task
+![alt text](image-5.png)
+
 ### Active Tab
 ![alt text](image-3.png)
 

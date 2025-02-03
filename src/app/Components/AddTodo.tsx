@@ -3,7 +3,6 @@
 import { useState } from "react"
 import { addTodo } from "@/Stores/todos/todosSlice"
 import { useDispatch } from 'react-redux';
-import { PlusCircle } from "lucide-react";
 
 function AddTodo() {
     const [inputText, setInputText] = useState('');
