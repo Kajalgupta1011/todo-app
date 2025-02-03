@@ -21,7 +21,6 @@ function AddTodo() {
       <>
         <form onSubmit={addTodoHandler} className="w-full pt-4 pb-6">
           <div className="w-full ">
-            <div className="relative">
               <input
                 type="text"
                 value={inputText}
@@ -39,7 +38,7 @@ function AddTodo() {
                 <PlusCircle className="h-4 w-4 mr-2" />
                 Add Todo
               </button> */}
-            </div>
+   
           </div>
         </form>
       </>

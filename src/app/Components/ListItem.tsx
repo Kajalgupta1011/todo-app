@@ -29,7 +29,7 @@ function ListItem({ todo }: todoProps) {
 
   if (isEdit) {
     return (
-      <li className='flex items-center gap-2 p-4 bg-white rounded-lg shadow-sm'>
+      <li className='flex sm:flex-col md:items-center gap-2 p-4 bg-white rounded-lg shadow-sm'>
         <input
           type="text"
           value={editText}
@@ -53,7 +53,7 @@ function ListItem({ todo }: todoProps) {
   }
 
   return (
-    <li className='flex items-center justify-between gap-3 p-4 bg-white rounded-lg shadow-sm'>
+    <li className='flex flex-wrap items-center justify-between gap-6 p-4 bg-white rounded-lg shadow-sm'>
       <label className="flex items-center">
         <input
           type="checkbox"
@@ -78,18 +78,18 @@ function ListItem({ todo }: todoProps) {
       <span className={`flex-1 ${todo.completed ? 'line-through text-slate-400' : 'text-slate-700'}`}>
         {todo.text}
       </span> */}
-      <div>
+      <div className='flex-1 justify-end flex gap-2'>
         <button
           onClick={() => setIsEdit(true)}
           disabled={todo.completed}
-          className="px-2 py-1 text-sm text-blue-600"
+          className=" text-sm text-blue-600"
         >
           <Pencil className="h-4 w-4" />
         </button>
 
         <button
           onClick={() => dispatch(deleteTodo(todo.id))}
-          className="px-2 py-1 text-sm text-[var(--orange-color)]"
+          className="text-sm text-[var(--orange-color)]"
         >
           <Trash2 className="h-4 w-4" />
         </button>

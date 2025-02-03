@@ -10,7 +10,7 @@ import AddTodo from './AddTodo';
 const TabButton = ({ tab, activeTab, setActiveTab, icon, label }: any) => {
   return (
     <div
-      className={`flex font-bold w-full items-center p-2 gap-1 mb-4 ${activeTab === tab ? "shadow-sm bg-white text-[var(--orange-color)] rounded-md" : "text-gray-500"}`}
+      className={`flex font-bold w-full items-center p-2 gap-1 mb-4 ${activeTab === tab ? "shadow-sm shadow-[var(--orange-color)] bg-white text-[var(--orange-color)] rounded-md" : "text-gray-500"}`}
       onClick={() => setActiveTab(tab)}
     >
       <span>{icon}</span>
@@ -36,13 +36,13 @@ export function TodoList() {
   });
 
   return (
-    <div className='grid w-full md:grid-cols-[240px,1fr] min-h-[702px] '>
-      <div className='p-8 h-ful bg-muted border-r-[1px] border-[#D8D8D8]'>
+    <div className='grid w-full grid-cols-[75px,1fr]  md:grid-cols-[240px,1fr] md:min-h-[702px] '>
+      <div className='md:p-8 p-5 h-ful bg-muted border-r-[1px] border-[#D8D8D8]'>
         {tabs.map(({ tab, icon, label }) => (
           <TabButton key={tab} tab={tab} activeTab={activeTab} setActiveTab={setActiveTab} icon={icon} label={label} />
         ))}
       </div>
-      <div className="w-full sm:min-w-[400px] p-8 bg-card">
+      <div className="w-full sm:min-w-[400px] md:p-8 p-5 bg-card">
         <h1 className="font-bold flex items-center gap-2 text-4xl md:text-4xl text-center text-slate-800">
           <span className='capitalize'>{activeTab}</span> Tasks
         </h1>
