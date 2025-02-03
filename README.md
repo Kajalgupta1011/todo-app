@@ -57,16 +57,12 @@ Before running the app, make sure you have the following installed:
 
 This will start the app on [http://localhost:3000](http://localhost:3000).
 
-### Folder Structure
 
-    ```bash
-    /app                 # Next.js App Directory
-        /components        # React components
-        /pages             # Next.js pages
-        /store             # Redux Toolkit slices and store configuration
-        /styles            # Tailwind CSS styles
-    /public              # Public assets like images
+### All Tab
+![alt text](image-2.png)
 
+### Active Tab
+![alt text](image-3.png)
 
-
-![alt text](image.png)
+### Completed Tab
+![alt text](image-4.png)
