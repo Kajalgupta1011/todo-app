@@ -66,3 +66,7 @@ This will start the app on [http://localhost:3000](http://localhost:3000).
         /store             # Redux Toolkit slices and store configuration
         /styles            # Tailwind CSS styles
     /public              # Public assets like images
+
+
+
+![alt text](image.png)

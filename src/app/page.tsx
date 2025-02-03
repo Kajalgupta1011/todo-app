@@ -1,16 +1,14 @@
 
 import { CheckSquare } from 'lucide-react';
-import AddTodo from './Components/AddTodo'
+// import AddTodo from './Components/AddTodo'
 import { TodoList } from './Components/TodoList';
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center p-8 bg-slate-50">
-      <h1 className="font-bold flex items-center gap-2 text-4xl md:text-4xl text-center text-slate-800 mb-1">
-      <CheckSquare className="h-8 w-8 text-primary" /> ToDo App
-      </h1>
-      <p className='text-slate-500 mb-8'>Manage your tasks efficiently with our modern todo application</p>
-      <AddTodo />
-      <TodoList />
+    <main className="font-lato min-h-screen p-8 flex flex-col items-center justify-center">
+      <div className='w-full max-w-5xl rounded-[8px] bg-[var(--background)] min-h-[702px]'>              
+        <TodoList />
+      </div>
+
     </main>
   );
 }
