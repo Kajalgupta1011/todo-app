@@ -20,8 +20,8 @@ function AddTodo() {
   
     return (
       <>
-        <form onSubmit={addTodoHandler} className="flex justify-center">
-          <div className="w-full max-w-sm sm:min-w-[280px] md:min-w-[400px]">
+        <form onSubmit={addTodoHandler} className="flex justify-center w-full">
+          <div className="w-full md:max-w-sm md:min-w-[400px]">
             <div className="relative">
               <input
                 type="text"
