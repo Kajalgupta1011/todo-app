@@ -10,7 +10,7 @@ import AddTodo from './AddTodo';
 const TabButton = ({ tab, activeTab, setActiveTab, icon, label }: any) => {
   return (
     <div
-      className={`flex font-bold w-full items-center p-2 gap-1 mb-4 ${activeTab === tab ? "shadow-sm shadow-[var(--orange-color)] bg-white text-[var(--orange-color)] rounded-md" : "text-gray-500"}`}
+      className={`flex font-bold w-full items-center p-2 gap-1 mb-4 ${activeTab === tab ? "shadow-sm shadow-gray-200 bg-white text-[var(--orange-color)] rounded-md" : "text-gray-500"}`}
       onClick={() => setActiveTab(tab)}
     >
       <span>{icon}</span>

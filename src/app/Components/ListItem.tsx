@@ -53,7 +53,7 @@ function ListItem({ todo }: todoProps) {
   }
 
   return (
-    <li className='flex flex-wrap items-center justify-between gap-6 p-4 bg-white rounded-lg shadow-sm'>
+    <li className='flex flex-wrap items-center justify-between gap-6 p-4 bg-white rounded-lg shadow-gray-200 shadow-sm'>
       <label className="flex items-center">
         <input
           type="checkbox"
@@ -69,7 +69,7 @@ function ListItem({ todo }: todoProps) {
         </span>
         <span className={`flex-1 text-[18px] ml-3 ${todo.completed ? 'line-through text-slate-400' : 'text-slate-700'}`}>{todo.text}</span>
       </label>
-      <div className='flex-1 justify-end flex gap-2'>
+      <div className='flex-1 justify-end flex gap-3'>
         <button
           onClick={() => setIsEdit(true)}
           disabled={todo.completed}
